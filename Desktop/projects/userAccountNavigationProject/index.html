@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Navigation Menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="navigation">
+		<div class="user-bx">
+			<div class="img-bx">
+				<img src="reWalls.jpg">
+			</div>
+			<p class="'username">Рамиль Фазлуллин</p>
+		</div>
+		<div class="menu-toggle"></div>
+		<ul class="menu">
+			<li><a href="#">
+					<ion-icon name="person-outline"></ion-icon>Профиль
+				</a></li>
+			<li><a href="#">
+					<ion-icon name="chatbubble-outline"></ion-icon>Сообщения
+				</a></li>
+			<li><a href="#">
+					<ion-icon name="notifications-outline"></ion-icon>Уведомления
+				</a></li>
+			<li><a href="#">
+					<ion-icon name="settings-outline"></ion-icon>Настройки
+				</a></li>
+			<li><a href="#">
+					<ion-icon name="help-outline"></ion-icon>Помощь
+				</a></li>
+			<li><a href="#">
+					<ion-icon name="log-out-outline"></ion-icon>Выйти
+				</a></li>
+		</ul>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+	</script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script>
+		let menuToggle = document.querySelector('.menu-toggle');
+		let navigation = document.querySelector('.navigation');
+		menuToggle.onclick = function () {
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+
+</html>
